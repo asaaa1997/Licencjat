@@ -13,3 +13,7 @@ Dostępne jest również powtórzenie danego języka.
 Aplikacja przeznaczona jest dla osób w każdej grupie wiekowej.
 
 Aplikacja została stworzona z użyciem PHP, Twig. Wykorzystano Symfony, Docker.
+
+Przykładowe dane do logowania:
+login: user0
+hasło: user1234
