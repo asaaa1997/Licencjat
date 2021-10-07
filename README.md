@@ -1,5 +1,5 @@
 # Licencjat
-Praca licencjacka została stworzona w ramach studiów na Uniwersytecie Jagiellońskim na kierunku elektroniczne przetwarzanie informacji.
+Praca licencjacka została stworzona przez Joannę Pajor w ramach studiów na Uniwersytecie Jagiellońskim na kierunku elektroniczne przetwarzanie informacji.
 
 Temat: Fiszki do nauki języka obcego — język angielski, węgierski oraz włoski.
 
@@ -11,3 +11,5 @@ Przy każdej pozycji z listy znajduje się ikona głośnika, umożliwiająca us�
 Dostępne jest również powtórzenie danego języka.
 
 Aplikacja przeznaczona jest dla osób w każdej grupie wiekowej.
+
+Aplikacja została stworzona z użyciem PHP, Twig. Wykorzystano Symfony, Docker.
