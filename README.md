@@ -6,7 +6,7 @@ Temat: Fiszki do nauki języka obcego — język angielski, węgierski oraz wło
 Aplikacja ma za zadanie wspomóc użytkownika w samodzielnej nauce języka obcego. Fiszki można tworzyć w języku angielskim, węgierskim oraz włoskim.
 
 Dostępny jest CRUD słów oraz wyrażeń.
-Przy każdej pozycji z listy znajduje się ikona głośnika, umożliwiająca usłyszenie poprawnej wymowy. 
+Przy każdej pozycji z listy znajduje się ikona głośnika, umożliwiająca usłyszenie poprawnej wymowy. Zastosowano funkcję JS - responsiveVoice.
 
 Dostępne jest również powtórzenie danego języka.
 
