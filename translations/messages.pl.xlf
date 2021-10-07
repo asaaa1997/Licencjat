@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="pl" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="label_actions">
+                <source>label_actions</source>
+                <target>Akcja</target>
+            </trans-unit>
+            <trans-unit id="label_id">
+                <source>label_id</source>
+                <target>Id</target>
+            </trans-unit>
+            <trans-unit id="label_title">
+                <source>label_title</source>
+                <target>Tytuł</target>
+            </trans-unit>
+            <trans-unit id="label_content">
+                <source>label_content</source>
+                <target>Zawartość</target>
+            </trans-unit>
+            <trans-unit id="label_tags">
+                <source>label_tags</source>
+                <target>Tagi</target>
+            </trans-unit>
+            <trans-unit id="message_empty_list">
+                <source>message_empty_list</source>
+                <target>Pusta lista</target>
+            </trans-unit>
+            <trans-unit id="title_sentence_list">
+                <source>title_sentence_list</source>
+                <target>Lista wyrażeń</target>
+            </trans-unit>
+            <trans-unit id="title_sentence_view">
+                <source>title_sentence_view</source>
+                <target>Szczegóły wyrażenia #%id%</target>
+            </trans-unit>
+            <trans-unit id="label_name">
+                <source>label_name</source>
+                <target>Nazwa</target>
+            </trans-unit>
+            <trans-unit id="label_category">
+                <source>label_category</source>
+                <target>Kategoria</target>
+            </trans-unit>
+            <trans-unit id="label_word">
+                <source>label_word</source>
+                <target>Słowa</target>
+            </trans-unit>
+            <trans-unit id="title_word_list">
+                <source>title_word_list</source>
+                <target>Lista słów</target>
+            </trans-unit>
+            <trans-unit id="title_category_list">
+                <source>title_category_list</source>
+                <target>Lista kategorii</target>
+            </trans-unit>
+            <trans-unit id="title_category_create">
+                <source>title_category_create</source>
+                <target>Dodaj kategorię</target>
+            </trans-unit>
+            <trans-unit id="label_sentence">
+                <source>label_sentence</source>
+                <target>Wyrażenia</target>
+            </trans-unit>
+            <trans-unit id="label_translation">
+                <source>label_translation</source>
+                <target>Tłumaczenie</target>
+            </trans-unit>
+            <trans-unit id="label_language">
+                <source>label_language</source>
+                <target>Język</target>
+            </trans-unit>
+            <trans-unit id="title_word_edit">
+                <source>title_word_edit</source>
+                <target>Edytuj słowo</target>
+            </trans-unit>
+            <trans-unit id="title_word_create">
+                <source>title_word_create</source>
+                <target>Dodaj słowo</target>
+            </trans-unit>
+            <trans-unit id="title_word_delete">
+                <source>title_word_delete</source>
+                <target>Usuń słowo</target>
+            </trans-unit>
+            <trans-unit id="action_word_create">
+                <source>action_word_create</source>
+                <target>Dodaj słowo</target>
+            </trans-unit>
+            <trans-unit id="action_edit">
+                <source>action_edit</source>
+                <target>Edytuj</target>
+            </trans-unit>
+            <trans-unit id="action_delete">
+                <source>action_delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            <trans-unit id="action_back_to_list">
+                <source>action_back_to_list</source>
+                <target>Powrót</target>
+            </trans-unit>
+            <trans-unit id="title_sentence_edit">
+                <source>title_sentence_edit</source>
+                <target>Edytuj wyrażenie</target>
+            </trans-unit>
+            <trans-unit id="title_sentence_create">
+                <source>title_sentence_create</source>
+                <target>Dodaj wyrażenie</target>
+            </trans-unit>
+            <trans-unit id="title_sentence_delete">
+                <source>title_sentence_delete</source>
+                <target>Usuń wyrażenie</target>
+            </trans-unit>
+            <trans-unit id="action_sentence_create">
+                <source>action_sentence_create</source>
+                <target>Dodaj wyrażenie</target>
+            </trans-unit>
+            <trans-unit id="title_category_edit">
+                <source>title_category_edit</source>
+                <target>Edytuj kategorię</target>
+            </trans-unit>
+            <trans-unit id="action_listen">
+                <source>action_listen</source>
+                <target>Posłuchaj</target>
+            </trans-unit>
+            <trans-unit id="label_none">
+                <source>label_none</source>
+                <target>...</target>
+            </trans-unit>
+            <trans-unit id="action_category_create">
+                <source>action_category_create</source>
+                <target>Dodaj kategorię</target>
+            </trans-unit>
+            <trans-unit id="title_category_delete">
+                <source>title_category_delete</source>
+                <target>Usuń kategorię</target>
+            </trans-unit>
+            <trans-unit id="message_created_successfully">
+                <source>message_created_successfully</source>
+                <target>Stworzono poprawnie</target>
+            </trans-unit>
+            <trans-unit id="message_updated_successfully">
+                <source>message_updated_successfully</source>
+                <target>Edytowano poprawnie</target>
+            </trans-unit>
+            <trans-unit id="message.deleted_successfully">
+                <source>message.deleted_successfully</source>
+                <target>Usunięto poprawnie</target>
+            </trans-unit>
+            <trans-unit id="message_form_error">
+                <source>message_form_error</source>
+                <target>Błąd formularza</target>
+            </trans-unit>
+            <trans-unit id="label_login">
+                <source>label_login</source>
+                <target>Zaloguj się</target>
+            </trans-unit>
+            <trans-unit id="label_username">
+                <source>label_username</source>
+                <target>Użytkownik</target>
+            </trans-unit>
+            <trans-unit id="label_password">
+                <source>label_password</source>
+                <target>Hasło</target>
+            </trans-unit>
+            <trans-unit id="app_register">
+                <source>app_register</source>
+                <target>Rejestracja</target>
+            </trans-unit>
+            <trans-unit id="app_login">
+                <source>app_login</source>
+                <target>Logowanie</target>
+            </trans-unit>
+            <trans-unit id="app_logout">
+                <source>app_logout</source>
+                <target>Wyloguj</target>
+            </trans-unit>
+            <trans-unit id="label_uaccount">
+                <source>label_uaccount</source>
+                <target>Konto</target>
+            </trans-unit>
+            <trans-unit id="title_main">
+                <source>title_main</source>
+                <target>Strona główna</target>
+            </trans-unit>
+            <trans-unit id="action_register">
+                <source>action_register</source>
+                <target>Zarejestruj się</target>
+            </trans-unit>
+            <trans-unit id="label_register">
+                <source>label_register</source>
+                <target>Rejestracja</target>
+            </trans-unit>
+            <trans-unit id="label_change_username">
+                <source>label_change_username</source>
+                <target>Zmień nazwę</target>
+            </trans-unit>
+            <trans-unit id="label_change_password">
+                <source>label_change_password</source>
+                <target>Zmień hasło</target>
+            </trans-unit>
+            <trans-unit id="label_author">
+                <source>label_author</source>
+                <target>Autor</target>
+            </trans-unit>
+            <trans-unit id="action_cant_delete">
+                <source>action_cant_delete</source>
+                <target>Brak możliwości usunięcia.</target>
+            </trans-unit>
+            <trans-unit id="title_change_username">
+                <source>title_change_username</source>
+                <target>Zmiana nazwy użytkownika</target>
+            </trans-unit>
+            <trans-unit id="action_save">
+                <source>action_save</source>
+                <target>Zapisz</target>
+            </trans-unit>
+            <trans-unit id="message_username_updated_successfully">
+                <source>message_username_updated_successfully</source>
+                <target>Nazwa użytkownika poprawnie zmieniona</target>
+            </trans-unit>
+            <trans-unit id="title_change_password">
+                <source>title_change_password</source>
+                <target>Zmiana hasła</target>
+            </trans-unit>
+            <trans-unit id="label_repeat_password">
+                <source>label_repeat_password</source>
+                <target>Powtórz hasło</target>
+            </trans-unit>
+            <trans-unit id="message_password_updated_successfully">
+                <source>message_password_updated_successfully</source>
+                <target>Hasło poprawnie zmienione</target>
+            </trans-unit>
+            <trans-unit id="label_info">
+                <source>label_info</source>
+                <target>O serwisie</target>
+            </trans-unit>
+            <trans-unit id="title_info">
+                <source>title_info</source>
+                <target>O serwisie</target>
+            </trans-unit>
+            <trans-unit id="title_choose_quiz_language">
+                <source>title_choose_quiz_language</source>
+                <target>Wybierz język powtórki</target>
+            </trans-unit>
+            <trans-unit id="language_it">
+                <source>language_it</source>
+                <target>Włoski</target>
+            </trans-unit>
+            <trans-unit id="language_en">
+                <source>language_en</source>
+                <target>Angielski</target>
+            </trans-unit>
+            <trans-unit id="language_hu">
+                <source>language_hu</source>
+                <target>Węgierski</target>
+            </trans-unit>
+            <trans-unit id="title_choose_quiz_mode">
+                <source>title_choose_quiz_mode</source>
+                <target>Wybierz tryb powtórki</target>
+            </trans-unit>
+            <trans-unit id="type_word_translation">
+                <source>type_word_translation</source>
+                <target>Wprowadź tłumaczenie słowa</target>
+            </trans-unit>
+            <trans-unit id="type_word">
+                <source>type_word</source>
+                <target>Wprowadź słowo</target>
+            </trans-unit>
+            <trans-unit id="type_sentence_translation">
+                <source>type_sentence_translation</source>
+                <target>Wprowadź tłumaczenie wyrażenia</target>
+            </trans-unit>
+            <trans-unit id="type_sentence">
+                <source>type_sentence</source>
+                <target>Wprowadź wyrażenie</target>
+            </trans-unit>
+            <trans-unit id="action_back">
+                <source>action_back</source>
+                <target>Powrót</target>
+            </trans-unit>
+            <trans-unit id="title_type_word_translation">
+                <source>title_type_word_translation</source>
+                <target>Wprowadź tłumaczenie słowa</target>
+            </trans-unit>
+            <trans-unit id="action_submit">
+                <source>action_submit</source>
+                <target>Sprawdzenie</target>
+            </trans-unit>
+            <trans-unit id="action_accept">
+                <source>action_accept</source>
+                <target>Czy poprawnie?</target>
+            </trans-unit>
+            <trans-unit id="title_type_sentence_translation">
+                <source>title_type_sentence_translation</source>
+                <target>Wprowadź tłumaczenie wyrażenia</target>
+            </trans-unit>
+            <trans-unit id="title_type_sentence">
+                <source>title_type_sentence</source>
+                <target>Wprowadź wyrażenie</target>
+            </trans-unit>
+            <trans-unit id="title_register">
+                <source>title_register</source>
+                <target>Zarejestruj się</target>
+            </trans-unit>
+            <trans-unit id="title_type_word">
+                <source>title_type_word</source>
+                <target>Wprowadź słowo</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
