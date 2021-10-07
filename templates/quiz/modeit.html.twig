@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title_choose_quiz_mode'|trans }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'title_choose_quiz_mode'|trans }} - język włoski</h1>
+
+    <div class="flex-parentb jc-center">
+        <button type="button" class="bquizm margin-rightm"><a href="{{ url('quiz_wordtransit') }}">{{ 'type_word_translation'|trans }}</a></button>
+        <button type="button" class="bquizm margin-rightm"><a href="{{ url('quiz_wordit') }}">{{ 'type_word'|trans }}</a></button>
+        <button type="button" class="bquizm margin-rightm"><a href="{{ url('quiz_sentencetransit') }}">{{ 'type_sentence_translation'|trans }}</a></button>
+        <button type="button" class="bquizm"><a href="{{ url('quiz_sentenceit') }}">{{ 'type_sentence'|trans }}</a></button>
+    </div>
+
+    <div class="flex-parentb jc-center">
+        <button type="button" class="backtolistm"><a href="{{ url('quiz_index') }}">{{ 'action_back'|trans }}</a></button>
+    </div>
+{% endblock  %}

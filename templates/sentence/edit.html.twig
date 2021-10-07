@@ -1,0 +1,11 @@
+{% include 'default/_form.html.twig' with {
+    page_title: 'title_sentence_edit',
+    page_title_param: {'%id%': sentence.id},
+    attr: {
+        method: 'PUT',
+        action: url('sentence_edit', {'id': sentence.id}),
+    },
+    form: form,
+    submit_label: 'action_edit'|trans,
+    back_to_list_path: 'sentence_index',
+} %}

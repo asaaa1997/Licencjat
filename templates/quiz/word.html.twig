@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title_type_word'|trans }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'title_type_word'|trans }} - język włoski</h1>
+
+    {% if pagination is defined and pagination|length %}
+        <div class="paginator">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>{{ 'label_translation'|trans }}</th>
+                <th>{{ 'label_name'|trans }}</th>
+                <th>{{ 'action_submit'|trans }}</th>
+                <th>{{ 'action_accept'|trans }}</th>
+                <th style="display: none">{{ 'label_name'|trans }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for word in pagination.items %}
+                {% for translation in word.translations %}
+                    <tr>
+                        <td>{{ translation.name }}</td>
+                        <td>
+                            <input type="text" class="inputquiz" id="inp{{ translation.id }}">
+                        </td>
+                        <td>
+                            <button type="button" class="bttnquiz" onclick="Check({{ translation.id }})"></button>
+                        </td>
+                        <td>
+                            <div style="display: none" id="acceptquizright{{ translation.id }}" class="acceptquizclass">
+                                <div class="acceptquizclassic"></div>
+                            </div>
+                            <div style="display: block" id="acceptquizwrong{{ translation.id }}" class="acceptquizclasswrong">
+                                <div class="acceptquizclasswrongic"></div>
+                            </div>
+                        </td>
+                        <td style="display: none" id="name{{ translation.id }}">
+                            {{ word.name }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="paginator">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+    {% else %}
+        <p class="emptylist">
+            {% include 'default/_single_flash_message.html.twig' with {
+                type: 'warning',
+                message: 'message_empty_list'|trans
+            } %}
+        </p>
+    {% endif %}
+{% endblock  %}
+{% block javascripts %}
+    <script>
+        function Check(translationId){
+            var inputquiz = document.getElementById("inp"+translationId).value;
+            var name = document.getElementById("name"+translationId).innerText.trim();
+
+            var acceptquizwrong = document.getElementById("acceptquizwrong"+translationId);
+            var acceptquizright = document.getElementById("acceptquizright"+translationId);
+
+            console.log(name);
+
+            if(inputquiz === name){
+                acceptquizwrong.style.display = "none";
+                acceptquizright.style.display = "block";
+            }
+            else{
+                acceptquizright.style.display = "none";
+                acceptquizwrong.style.display = "block";
+            }
+        }
+    </script>
+{% endblock %}

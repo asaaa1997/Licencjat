@@ -1,0 +1,10 @@
+{% include 'default/_create.html.twig' with {
+    page_title: 'title_word_create',
+    attr: {
+        method: 'POST',
+        action: url('word_create')
+    },
+    form: form,
+    submit_label: 'action_word_create'|trans,
+    back_to_list_path: 'word_index',
+} %}

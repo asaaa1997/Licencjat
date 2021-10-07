@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=0.8" name="viewport">
+    <title>{% block title %}Fiszki do nauki języka obcego — język angielski, węgierski oraz włoski{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    {% endblock %}
+</head>
+<body>
+    <div class="menu">
+        <a href="{{ url('main_index') }}"><div class="logo"></div></a>
+
+        <nav id="menu">
+            <ol>
+                {% if is_granted('ROLE_USER') %}
+                    <li class="rightli">{{ 'label_uaccount'|trans }}
+                        <ul>
+                            <li><div id="uaccount">{{ app.user.username }}</div></li>
+                            <li><a href="{{ url('user_username', {id: user.id}) }}">{{ 'label_change_username'|trans }}</a></li>
+                            <li><a href="{{ url('user_password', {id: user.id}) }}">{{ 'label_change_password'|trans }}</a></li>
+                            <li><a href="{{ url('app_logout') }}">{{ 'app_logout'|trans }}</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ url('quiz_index') }}">Powtórka</a></li>
+                    <li>{{ 'label_category'|trans }}
+                        <ul>
+                            <li><a href="{{ url('category_index') }}">{{ 'title_category_list'|trans }}</a></li>
+                            <li><a href="{{ url('category_create') }}">{{ 'title_category_create'|trans }}</a></li>
+                        </ul>
+                    </li>
+                    <li>{{ 'label_sentence'|trans }}
+                        <ul>
+                            <li><a href="{{ url('sentence_index') }}">{{ 'title_sentence_list'|trans }}</a></li>
+                            <li><a href="{{ url('sentence_create') }}">{{ 'title_sentence_create'|trans }}</a></li>
+                        </ul>
+                    </li>
+                    <li>{{ 'label_word'|trans }}
+                        <ul>
+                            <li><a href="{{ url('word_index') }}">{{ 'title_word_list'|trans }}</a></li>
+                            <li><a href="{{ url('word_create') }}">{{ 'title_word_create'|trans }}</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ url('main_info') }}">{{ 'label_info'|trans }}</a></li>
+                {% else %}
+                    <li id="lilog" class="rightli"><a href="{{ url('app_register') }}">{{ 'label_register'|trans }}</a></li>
+                    <li id="lilog"><a href="{{ url('app_login') }}">{{ 'app_login'|trans }}</a></li>
+                {% endif %}
+            </ol>
+        </nav>
+    </div>
+
+    <div class="baner"></div>
+
+    {% include 'default/_flash_messages.html.twig' %}
+
+
+    <main>
+        {% block body %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p id="footernapis">© Joanna Pajor</p>
+    </footer>
+{% block javascripts %}
+{% endblock %}
+</body>
+</html>

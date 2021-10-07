@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title_choose_quiz_language'|trans }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'title_choose_quiz_language'|trans }}</h1>
+
+    <div class="flex-parent jc-center">
+        <button type="button" class="bquiz margin-right"><a href="{{ url('quiz_modeit') }}">{{ 'language_it'|trans }}</a></button>
+        <button type="button" class="bquiz margin-right"><a href="{{ url('quiz_modeen') }}">{{ 'language_en'|trans }}</a></button>
+        <button type="button" class="bquiz"><a href="{{ url('quiz_modehu') }}">{{ 'language_hu'|trans }}</a></button>
+    </div>
+{% endblock  %}

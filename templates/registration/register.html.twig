@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title_register'|trans }}{% endblock %}
+
+{% block body %}
+    <h1 id="hlogin">{{ 'title_register'|trans }}</h1>
+
+    {{ form_start(registrationForm) }}
+    {{ form_row(registrationForm.username) }}
+    {{ form_row(registrationForm.password) }}
+
+    <div>
+        <input type="submit" value="{{ 'action_register'|trans }}"/>
+    </div>
+    {{ form_end(registrationForm) }}
+{% endblock %}

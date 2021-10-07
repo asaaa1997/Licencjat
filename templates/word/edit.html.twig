@@ -1,0 +1,11 @@
+{% include 'default/_edit.html.twig' with {
+    page_title: 'title_word_edit',
+    page_title_param: {'%id%': word.id},
+    attr: {
+        method: 'PUT',
+        action: url('word_edit', {'id': word.id}),
+    },
+    form: form,
+    submit_label: 'action_edit'|trans,
+    back_to_list_path: 'word_index',
+} %}

@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title_main'|trans }}
+{% endblock %}
+
+{% block body %}
+    <h1 id="mainh1">Fiszki do nauki języka obcego — język angielski, węgierski oraz włoski</h1>
+
+    <h3>Podstawowe informacje</h3>
+    <p>Aplikacja ma za zadanie wspomóc użytkownika w samodzielnej nauce języka obcego.
+        Fiszki można tworzyć w języku angielskim, węgierskim oraz włoskim.
+    </p>
+    <p>
+        Praca licencjacka została stworzona przez Joannę Pajor w ramach studiów na Uniwersytecie Jagiellońskim na kierunku elektroniczne przetwarzanie informacji.
+    </p>
+
+    <h3>Co umożliwia aplikacja?</h3>
+    <p>Aplikacja umożliwia utworzenie konta użytkownika.
+        W ramach zarządzania kontem istnieje możliwość <a href="{{ url('user_username', {id: user.id}) }}">zmiany nazwy użytkownika</a> oraz <a href="{{ url('user_password', {id: user.id}) }}">zmiany hasła</a>.
+    </p>
+    <p>
+        Jest możliwe wyświetlanie listy słów lub wyrażeń z bazy.
+        Można filtrować dane z listy, klikając na dany język bądź kategorię.
+        Przy każdej pozycji z listy znajduje się przycisk, umożliwiający usłyszenie poprawnej wymowy.
+    </p>
+
+    <h3>Dodawanie słów i wyrażeń</h3>
+    <p>Użytkownik może dodawać do bazy słowa oraz wyrażenia.
+        Wraz z wprowadzonymi danymi wpisuje się również ich tłumaczenia.
+        Algorytm odpowiednio sprawdzi, czy podane informacje nie występują już w bazie.
+    </p>
+    <p>
+        Przy dodawaniu słów bądź wyrażeń należy przypisać je do odpowiedniej kategorii.
+        Można ją wybrać z wcześniej dodanych albo utworzyć nową.
+        Przypisać należy również <br>do języka, który można wybrać z listy.
+    </p>
+
+    <h3>Edycja oraz usuwanie słów i wyrażeń</h3>
+    <p>By edytować słowo lub wyrażenie z bazy, wystarczy kliknąć ikonę edycji przy odpowiednim słowie lub wyrażeniu.
+    </p>
+    <p>
+        Dostępny również jest ikona usuwania przy każdej pozycji z listy.
+        Można bez problemu usunąć zbędne informacje, gdy nie chcemy by znajdowały się w powtórce.
+    </p>
+
+    <h3>Powtórka słów i wyrażeń</h3>
+    <p>W zakładce <a href="{{ url('quiz_index') }}">Powtórka</a> dostępne jest również powtórzenie danego języka.
+        Najpierw wybrać trzeba odpowiedni język, a następnie tryb.
+        Należy zdecydować, czy wpisywać tłumaczenia czy uzupełniać dane w wybranym języku.
+    </p>
+
+    <h3>Dla kogo przeznaczona jest aplikacja?</h3>
+    <p>Aplikacja przeznaczona jest dla osób w każdej grupie wiekowej.
+        Wystarczy tylko chęć do samodzielnej nauki.
+    </p>
+    <p>Zapraszam do skorzystania z tej aplikacji.</p>
+{% endblock %}

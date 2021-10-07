@@ -1,0 +1,11 @@
+{% include 'default/_delete.html.twig' with {
+    page_title: 'title_sentence_delete',
+    page_title_param: {'%id%': sentence.id},
+    attr: {
+        method: 'DELETE',
+        action: url('sentence_delete', {'id': sentence.id}),
+    },
+    form: form,
+    submit_label: 'action_delete'|trans,
+    back_to_list_path: 'sentence_index',
+} %}
